@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: #ffffff;
+}
+
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.content {
+  padding: 20px 24px 28px;
+}
+
+.content h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.content p {
+  margin: 0 0 10px;
+  line-height: 1.5;
+  color: #d0d0d0;
+}
